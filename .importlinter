@@ -1,0 +1,39 @@
+# "One boundary, one contract": this Add-on imports exclusively from
+# plugin_api, never from the LocalBib core. Check from this folder:
+#
+#     cd addon-template && lint-imports
+#
+# The core need not be installed for this: include_external_packages catches
+# every import outside `template` by its top-level name, and the contract
+# below forbids the core's module names.
+[importlinter]
+root_packages =
+    template
+include_external_packages = True
+
+[importlinter:contract:template-only-plugin-api]
+name = The Add-on Template imports only from plugin_api, never from the core
+type = forbidden
+source_modules =
+    template
+forbidden_modules =
+    webapp
+    literature_manager
+    config
+    context
+    database
+    registry
+    plugin_loader
+    plugins_config
+    settings_store
+    host_services
+    llm_client
+    llm_config
+    openalex_client
+    paper_matcher
+    citation_graph_builder
+    network_orchestrator
+    metadata_validation
+    validation_policy
+    routers
+    services

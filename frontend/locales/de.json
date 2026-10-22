@@ -1,0 +1,7 @@
+{
+  "template.nav.label": "Vorlage",
+  "template.view.title": "Add-on-Vorlage",
+  "template.view.intro": "Dies ist der Ausgangspunkt fuer dein eigenes LocalBib-Add-on. Ersetze diese Ansicht, ihren Slot und ihren Endpunkt durch deine eigenen.",
+  "template.aside.label": "Aufrufe bisher:",
+  "template.settings.greeting": "Begruessung"
+}

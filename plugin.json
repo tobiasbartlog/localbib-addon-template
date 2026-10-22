@@ -1,0 +1,34 @@
+{
+  "id": "template",
+  "name": "Add-on Template",
+  "version": "0.1.0",
+  "author": "Your Name",
+  "license": "MIT",
+  "homepage": "https://github.com/tobiasbartlog/localbib-addon-template",
+  "tagline": "Starting point for a new LocalBib Add-on.",
+  "description": "A minimal Add-on: one backend endpoint, one view, one Slot, two languages, and tests against the Add-on Contract's fakes. Clone this repository and follow README.md to turn it into your own Add-on.",
+  "languages": ["en", "de"],
+  "default_language": "en",
+  "api_version": 2,
+  "min_core": "0.8.0",
+  "python": "any",
+  "permissions": ["library.read"],
+  "settings": [
+    {"key": "greeting", "type": "string", "label": "template.settings.greeting", "default": "Hello"}
+  ],
+  "frontend": {
+    "script": "frontend/template.js",
+    "stylesheet": "frontend/template.css",
+    "locales": {
+      "en": "frontend/locales/en.json",
+      "de": "frontend/locales/de.json"
+    }
+  },
+  "nav": {
+    "label": "template.nav.label",
+    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"4\" y=\"4\" width=\"16\" height=\"16\" rx=\"2\"/></svg>",
+    "route": "/template",
+    "view": "template.main"
+  },
+  "slots": ["item-detail-aside"]
+}

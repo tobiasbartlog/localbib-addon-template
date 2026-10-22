@@ -1,0 +1,6 @@
+/* template — Add-on Template stylesheet. Every class carries the "template-" prefix
+   and only the core's --lb-* design tokens are used (see README.md). */
+.template-view { padding: var(--space-4, 16px); }
+.template-title { margin: 0 0 8px; }
+.template-intro { color: var(--text-muted, inherit); }
+.template-aside { font-size: 0.9em; }

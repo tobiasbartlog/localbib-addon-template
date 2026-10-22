@@ -1,0 +1,7 @@
+{
+  "template.nav.label": "Template",
+  "template.view.title": "Add-on Template",
+  "template.view.intro": "This is the starting point for your own LocalBib Add-on. Replace this view, its Slot and its endpoint with your own.",
+  "template.aside.label": "Views so far:",
+  "template.settings.greeting": "Greeting"
+}

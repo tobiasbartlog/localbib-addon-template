@@ -1,0 +1,9 @@
+# What this Add-on Template needs to run its own tests WITHOUT the LocalBib
+# core (the same isolated setup real Add-ons use, e.g. plugins/atlas):
+#
+#     pip install "localbib-plugin-api[dev]>=2,<3" -r requirements-dev.txt
+#
+fastapi>=0.115.0,<0.116   # the Add-on's router
+pytest>=8.0.0
+httpx>=0.27.0             # FastAPI TestClient transport
+import-linter>=2.0        # .importlinter (only import from plugin_api)
