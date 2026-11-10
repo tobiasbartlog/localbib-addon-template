@@ -9,11 +9,10 @@ Contract package and its fakes alone — no LocalBib core required. See
 Add-on.
 
 Declares only ``library.read``: a Berechtigung the core actually wires today
-(``llm`` and ``settings.core`` exist in the contract too, ``files`` and
-``storage`` are reserved and grant nothing yet — see ``AUTHORING.md`` — but
-this template keeps its one working demo
-honest about what runs end to end right now; view counts live in the
-instance, not in a store).
+(``llm``, ``settings.core`` and, since 2.7, ``storage`` exist in the
+contract too; ``files`` is reserved and grants nothing yet — see
+``AUTHORING.md``. This template keeps its one demo minimal: view counts
+live in the instance, not in a store).
 """
 
 from __future__ import annotations
